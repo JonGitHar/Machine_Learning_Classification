@@ -3,7 +3,7 @@ The project was revised midway from predicting Olympic medaling to predicting ap
 The baseline model only considered a very tiny subset of the 154 features were considered: skill level, wage, fulfilling required experience, and presence of special skills. Of the KNN, logistic regression, and random forest classifier models attemped thus far, KNN produced the best balance of accuracy, precision, recall, and F1 values.
 
 Further feature engineering will be performed to introduce additional columns, such as 
-- If decision date was during Trump or Biden administration (0 if the date was before January 20, 2021 when President Biden took oath of office and 1 otherwise) and whether or not the
+- If decision date was during Trump or Biden administration (0 if the date was before January 20, 2021 when President Biden took oath of office and 1 otherwise)
 - If the candidate is employed by a prominent company (considering FAANG at this point as a categorical variable)
 - Additional column to indicate whether or not candidate has a Bachelor's degree (anyone whose highest degree is a Master's or PhD will be assumed to automatically fulfill this)
 
