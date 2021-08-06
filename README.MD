@@ -27,7 +27,7 @@ Tools for the project included -
 
 ## Findings
 
-XGBoost, random forest, and logistic regression models offer the best metrics at first glance of the ROC curve. Upon further tuning of hyperparameters, XGBoost reigns supreme with improvements in AUC (0.87=>0.93), F1 (0.39=> 0.48), and recall (0.79=>0.85) over baseline logistic regression model. With this model, the parameters are defined as follows :
+In this pursuit, the parameters are defined as follows :
 
 + True positive (TP) = actually declined application is predicted as being declined
 + True negative (TN) = actually approved application is predicted as being approved
@@ -35,9 +35,16 @@ XGBoost, random forest, and logistic regression models offer the best metrics at
 + False negative (FN) = actually declined application is predicted as being approved
 
 
-With these in mind, my emphasis was on minimizing false negatives and maximizing Recall score which equates to TP / (TP + FN).
+With these in mind, my emphasis is on minimizing false negatives and maximizing Recall score which equates to TP / (TP + FN). XGBoost, random forest, and logistic regression models offer the best metrics at first glance of the ROC curve. Upon further tuning of hyperparameters, XGBoost reigns supreme with improvements in AUC (0.87=>0.93), F1 (0.39=> 0.48), and recall (0.79=>0.85) over baseline logistic regression model. 
 
+Biggest contributing features to minizing the chances of application being declined that are also more or less in the employer's/employee's control would be:
+
+1) Higher salary
+2) Larger company size in terms of number of employees
+3) Higher skill level 
+4) Possessing a Bachelor's degree
+5) Listing a specific skill set in application
 
 ## Communication
 
-The entirety of my Python code is available in the same GitHub repository as this file. A model learning model is deployed through Streamlit which allows for user input of feature variables to provide a binary output result of the U.S. Permanent Labor Certification application.
+The entirety of my Python code is available in the same GitHub repository as this file. A model learning model will be deployed through Streamlit which allows for user input of feature variables to provide a binary output result of the U.S. Permanent Labor Certification application.
