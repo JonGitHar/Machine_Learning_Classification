@@ -35,9 +35,9 @@ In this pursuit, the parameters are defined as follows :
 + False negative (FN) = actually declined application is predicted as being approved
 
 
-With these in mind, my emphasis is on minimizing false negatives and maximizing Recall score which equates to TP / (TP + FN). XGBoost, random forest, and logistic regression models offer the best metrics at first glance of the ROC curve. Upon further tuning of hyperparameters, XGBoost reigns supreme with improvements in AUC (0.87=>0.93), F1 (0.39=> 0.48), and recall (0.79=>0.85) over baseline logistic regression model. 
+With these in mind, my emphasis is on minimizing false negatives (incorrectly predicting applications as being approved when in reality they will be rejected) and maximizing Recall score which equates to TP / (TP + FN). XGBoost, random forest, and logistic regression models offer the best metrics at first glance of the ROC curve. Upon further tuning of hyperparameters, XGBoost reigns supreme with improvements in AUC (0.87=>0.93), F1 (0.39=> 0.48), and recall (0.79=>0.85) over baseline logistic regression model. 
 
-Biggest contributing features to minizing the chances of application being declined that are also the employer's/employee's control would be:
+Biggest contributing features to minizing the chances of application being declined that are also within the employer's/employee's control would be:
 
 1) Higher salary
 2) Larger company size in terms of number of employees
